@@ -268,11 +268,12 @@ h3[class=cv-section] {
 
 ul[class="cv-section"] {
     list-style-type: none;
+    font-size: 18px;
 }
 
 .cv-location {
-    font-variant-caps:normal;
-    font-size:26px;
+    font-variant-caps: normal;
+    font-size: 23px;
 }
 
 a.cv-section {
