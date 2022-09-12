@@ -139,12 +139,12 @@ input[type="text"]:hover {
 
 }
 
-@media (min-width:800px) and (max-width:900px) {
+/* @media (min-width:800px) and (max-width:900px) {
 
     .profil-image {
         width: 30% !important;
     }
-}
+} */
 
 @media all and (max-width:480px) {
 
