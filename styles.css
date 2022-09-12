@@ -103,11 +103,11 @@ input[type="text"]:hover {
     font-size: 20px;
 }
 
-div[id="profile-style"] {
+/* div[id="profile-style"] {
     max-width: 75%;
     margin-top: 2%;
 
-}
+} */
 
 .about {
     display: inline-flex;
@@ -458,7 +458,7 @@ div[id="publication-main"] li:not(:last-child) {
 
 
 .profil-image {
-    width: 40% ;
+    width: 45% ;
     height: auto;
     border-radius: 15px;
     /* max-width: 100%;
@@ -476,7 +476,7 @@ div[id="publication-main"] li:not(:last-child) {
     top: 50%;
     left: 50%;
     -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, 6%);
     text-align: center
 }
 
