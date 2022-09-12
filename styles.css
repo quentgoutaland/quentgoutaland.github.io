@@ -149,9 +149,10 @@ div[id="profile-style"] {
     }
 
     .profil-image {
-        width: 80% !important;
+        width: 60% !important;
         height: auto;
         vertical-align: middle;
+        margin-top: 10px;
     }
 
     .about-contain {
