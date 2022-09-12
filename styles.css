@@ -195,6 +195,10 @@ input[type="text"]:hover {
     .cv-location {
         font-size:17px !important;
     }
+    ul[class="cv-section"] {
+    list-style-type: none;
+    font-size: 13px;
+}
 }
 
 /* @media all and (min-width:468px) and (max-width:900px) {
