@@ -195,8 +195,7 @@ input[type="text"]:hover {
     .cv-location {
         font-size:17px !important;
     }
-    ul[class="cv-section"] {
-    list-style-type: none;
+    .enumitem {
     font-size: 13px;
 }
 }
