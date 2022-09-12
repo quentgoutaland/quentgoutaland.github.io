@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta name="viewport" content="initial-scale=1, width=device-width">
+        <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"> -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <link href="styles.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+        <script src="https://use.fontawesome.com/137452f345.js"></script>
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script> <!--Used for navigation bar-->
+        <title>CV</title>
+    </head>
+    <body>
+        <!--Navigation bar-->
+        <div id="nav-placeholder"> </div>
+        <script>
+            $(function(){
+            $("#nav-placeholder").load("nav.html");
+              });
+        </script>
+        <!--end of Navigation bar-->
+        <!-- <div class="container-fluid section-title">
+            <h1> Resume <a id="printresume" href="/docs/resume.pdf" class="btn btn-dark ms-3" role="button"><span class="bi-printer-fill"></span> </a>
+            </h1>
+        </div> -->
+
+        <div class="container-fluid section-title">
+            <h1> Resume <button class="btn btn-dark ms-3" type="button" data-bs-toggle="modal" data-bs-target="#print_modal"><span class="bi-printer-fill"></span> </button>
+            </h1>
+        </div>
+
+        <div class="modal fade" id="print_modal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title"> Choose language</h5>
+                    </div>
+                    <div class="modal-body" style="text-align: center;">
+                        <a class="btn btn-dark mx-3 btn-print" role="button" href="/docs/resume_fr.pdf"> Français </a>
+                        <a class="btn btn-dark mx-3 btn-print" role="button" href="/docs/resume.pdf"> English </a>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+        <!-- <div class="container-fluid d-flex justify-content-center mt-3">
+            <a id="printresume" href="resume.pdf" class="btn btn-dark" role="button"><span class="bi-printer-fill"></span> Resume</a>
+        </div> -->
+
+        <div id="main" class="px-5">
+            <section class="post ">
+                <h2 class="cv-section"> <i class="fa fa-graduation-cap" aria-hidden="true"></i>   Education </h2>
+                <hr>
+                <ul class="cv-section">
+                    <li><h3 class="cv-section"> Master Physics of Complex Systems
+                        <br>
+                        <span class="cv-location"> Université Paris Saclay
+                            <i>(2018-2019)</i>
+                        </span>
+                        </h3>
+                            Statistical Mechanics <span>&#8226;</span> Statistical Field Theory <span>&#8226;</span> Stochastic Processes  <span>&#8226;</span> Mathematical tools  <span>&#8226;</span> Computational Science <span>&#8226;</span> Out-of-equilibrium Statistical Physics
+                    </li>
+
+                    <li><h3 class="cv-section"> Master ICFP Condensed Matter
+                        <br>
+                        <span class="cv-location"> Université Paris Saclay, ENS
+                            <i>(2017-2018)</i>
+                        </span>
+                    </h3>
+                    Statistcal Physics  <span>&#8226;</span> Numerical Physics <span>&#8226;</span> Condensed Matter Theory <span>&#8226;</span> Quantum Mechanics
+                </li>
+                </ul>
+            </section>
+
+            <section class="post">
+                <h2 class="cv-section"> <i class="fa fa-tablet" aria-hidden="true"></i>   Online Lectures </h2>
+                <hr>
+                <ul class="cv-section">
+                    <li>
+                        <a class="cv-section" href="https://www.coursera.org/specializations/machine-learning-introduction" onmouseover="hoverLink(this)" onmouseout="initialLink(this)">
+                            <h3 class="cv-section"> Machine Learning Specialization
+                                <br>
+                            <span class="cv-location"> Coursera
+                                <i> (March 2022)</i>
+                            </span>
+                            </h3>
+                        </a>
+                   </li>
+                   <li>
+                    <a class="cv-section" href="https://www.coursera.org/specializations/machine-learning-introduction" onmouseover="hoverLink(this)" onmouseout="initialLink(this)">
+                        <h3 class="cv-section"> Deep Learning Specialization
+                            <br>
+                        <span class="cv-location"> Coursera
+                            <i> (April 2022)</i>
+                        </span>
+                        </h3>
+                    </a>
+                    <a class="cv-section" href="https://www.coursera.org/specializations/machine-learning-introduction" onmouseover="hoverLink(this)" onmouseout="initialLink(this)">
+                        <h3 class="cv-section"> Data Scientist Python Career Track
+                            <br>
+                            <span class="cv-location"> DataCamp
+                                <i> (May 2022)</i>
+                            </span>
+                        </h3>
+                    </a>
+               </li>
+                </ul>
+            </section>
+
+            <section class="post ">
+                <h2 class="cv-section"> <i class="fa fa-tasks" aria-hidden="true"></i>   Programming Languages & Tools </h2>
+                <hr>
+                <ul class="cv-section">
+                    <li><h3 class="cv-section"> Languages</h3>
+                        Python <span>&#8226;</span> C/C++ <span>&#8226;</span> SQL <span>&#8226;</span> Javascript <span>&#8226;</span> HTML <span>&#8226;</span> CSS
+                    </li>
+
+                    <li><h3 class="cv-section"> Tools</h3>
+                        Numpy <span>&#8226;</span> Pandas <span>&#8226;</span> Matplotlib <span>&#8226;</span> Scipy <span>&#8226;</span> Seaborn <span>&#8226;</span> Scikit-learn <span>&#8226;</span> Tensorflow
+                    </li>
+
+                    <li><h3 class="cv-section"> Edition</h3>
+                        Latex <span>&#8226;</span> Beamer <span>&#8226;</span> Markdown
+                    </li>
+
+                    <li><h3 class="cv-section"> Operating Systems</h3>
+                        Linux (Kubuntu) <span>&#8226;</span> iPadOS <span>&#8226;</span> IOS <span>&#8226;</span> Android <span>&#8226;</span> Windows
+                    </li>
+                </ul>
+            </section>
+
+        </div>
+
+
+        <!-- Script for links highlighting in Online lectures section -->
+        <script>
+            function hoverLink(obj) {
+                obj.style.color = "#9c9c9c";
+            }
+
+            function initialLink(obj) {
+                obj.style.color = "#191937";
+            }
+        </script>
+
+    </body>
+</html>
