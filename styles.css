@@ -184,16 +184,16 @@ input[type="text"]:hover {
     }
 
     .post {
-        font-size: 15px !important;
+        font-size: 12px !important;
     }
     .post h2 {
-        font-size: 28px !important;
+        font-size: 29px !important;
     }
     .post h3 {
-        font-size: 21px !important;
+        font-size: 22px !important;
     }
     .cv-location {
-        font-size:21px !important;
+        font-size:17px !important;
     }
 }
 
